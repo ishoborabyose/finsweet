@@ -24,6 +24,9 @@
 .header__item {
   @apply text-[16px] font-roboto text-[#1D2130];
 }
+.header__gradient {
+  @apply -z-20 b-gradient;
+}
 .btn {
   @apply font-roboto-bold font-extrabold text-white bg-[#1D2130] transition-all duration-500 ease-in-out cursor-pointer w-[144px] h-[56px] flex justify-center items-center rounded-[12px] text-[16px];
 }
@@ -31,7 +34,31 @@
 .banner {
   @apply w-[1024px] mx-auto flex flex-col items-center mt-40 relative;
 }
+.banner__background--up {
+  @apply -z-20;
+}
 
+.banner__image {
+  @apply my-10;
+}
+.banner__picture {
+  @apply w-[1024px] h-[666.57px];
+}
+.title-gradient--center {
+  @apply text-center;
+}
+.title--up {
+  @apply mb-[20px];
+}
+.description-medium--up {
+  @apply mb-[20px];
+}
+.title--center {
+  @apply text-center;
+}
+.description--center {
+  @apply text-center;
+}
 .title {
   @apply text-[56px]  font-roboto leading-[110%] font-extrabold;
 }
@@ -63,7 +90,9 @@
 .title-medium {
   @apply text-[32px] font-[700] leading-[120%] mt-[10px] mb-[20px] font-roboto-bold;
 }
-
+.feature__feed {
+  @apply pl-[30px];
+}
 .desc-medium {
   @apply font-[400] text-[16px] opacity-[0.87] mt-[10px] font-roboto;
 }
@@ -85,14 +114,28 @@
 .impression__banner {
   @apply m-auto bg-transparent mr-[8%] ml-[8%];
 }
-
+.experience__name {
+  @apply font-roboto text-2xl;
+}
+.experience__job {
+  @apply font-roboto  text-xs;
+}
 .impression__gradient {
   @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10;
 }
 .impression__image {
   @apply pt-[50px] pb-[50px];
 }
+.title--up {
+  @apply mb-[20px];
+}
 
+.service__image {
+  @apply relative;
+}
+.service__gradient {
+  @apply absolute top-0 right-0 bottom-0 w-[522px] h-[522px] -z-10 blur-3xl;
+}
 .logo {
   @apply flex justify-between py-10 px-10;
 }
@@ -125,7 +168,9 @@
 .btn-container {
   @apply bg-[#E0E4FC] w-fit flex m-auto p-2 rounded-[20px] mt-[20px];
 }
-
+.feature__left {
+  @apply pl-[30px];
+}
 .pricing {
   @apply mr-[5%] ml-[5%] grid grid-cols-3 gap-[20px] mb-[100px] relative;
 }
@@ -143,6 +188,15 @@
 .pricing__title {
   @apply font-roboto font-bold text-lg text-[#1D2130] leading-[120%];
 }
+.pricing__title--center {
+  @apply text-center;
+}
+.pricing__gradient {
+  @apply absolute w-full h-full object-cover rounded-3xl -z-10;
+}
+.pricing__desc--center {
+  @apply text-center;
+}
 .pricing__desc {
   @apply font-roboto font-normal text-sm text-[#1D2130] opacity-[0.6] leading-[150%];
 }
@@ -153,9 +207,14 @@
 .pricing__item {
   @apply flex gap-3;
 }
-
+.pricing__background {
+  @apply absolute w-full h-full object-cover rounded-3xl -z-10;
+}
 .pricing__footer {
   @apply flex flex-col mx-auto gap-4;
+}
+.pricing__card--active {
+  @apply border-[#6B7CFF];
 }
 .questions {
   @apply mr-[5%] ml-[5%] grid grid-cols-2 bg-[#E0E4FC] p-[50px] rounded-[24px] mb-[20px];
@@ -173,7 +232,15 @@
 .question__input {
   @apply flex justify-between items-center;
 }
-
+.description-medium--light {
+  @apply opacity-[0.87];
+}
+.about__background {
+  @apply absolute top-0 left-0 -z-20 w-[800px] rounded-3xl;
+}
+.contactUs {
+  @apply mb-[100px];
+}
 .contact {
   @apply mr-[5%] ml-[5%] mt-[25px] grid grid-cols-2 bg-[#E0E4FC] p-[50px] rounded-[24px];
 }
@@ -209,6 +276,9 @@
 }
 .contact__description {
   @apply font-[400] text-[16px] text-[#1D2130] leading-[150%] opacity-[0.6];
+}
+.blogger {
+  @apply mb-[100px];
 }
 .blog {
   @apply mb-[20px];
