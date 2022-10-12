@@ -103,6 +103,7 @@
 .product__body-title,
 .footer__subject,
 .experience__title,
+.product-body__title,
 .banner__title,
 .product__title,
 .feature__title {
@@ -147,6 +148,8 @@
 .quality__img {
   @apply w-[66.44px] mb-[20px];
 }
+
+.product-body__subject,
 .questions__title,
 .product-cards__title,
 .title-medium,
@@ -156,6 +159,7 @@
 .feature__feed {
   @apply pl-[30px];
 }
+.product-body__description,
 .product-cards__description,
 .desc-medium,
 .feature__description {
@@ -606,10 +610,10 @@
   @apply m-auto bg-transparent mr-[8%] ml-[8%];
 }
 
-.product__body {
+.product-body {
   @apply flex flex-col mt-20 relative pt-20 pr-20;
 }
-.product__gradient {
+.product-body__gradient {
   @apply absolute top-0 left-0 right-0 bottom-0 w-full h-full -z-10;
 }
 .product__btns {
@@ -627,11 +631,11 @@
   @apply flex justify-between gap-10 py-10 px-20;
 }
 
-.product-cards {
+.product-body__cards {
   @apply right-[80px] grid grid-cols-3 w-fit bg-bg-rgba-4 p-[40px] pt-[50px] pb-[50px] gap-[40px] rounded-tr-3xl mr-[5%] pl-[5%] mt-[50px];
 }
 
-.product-cards__image {
+.product-body__image {
   @apply w-[66.44px] mb-[20px];
 }
 

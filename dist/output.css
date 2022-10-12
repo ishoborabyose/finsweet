@@ -802,6 +802,7 @@ video {
 .product__body-title, 
 .footer__subject, 
 .experience__title, 
+.product-body__title, 
 .banner__title, 
 .product__title, 
 .feature__title {
@@ -908,6 +909,7 @@ video {
   width: 66.44px;
 }
 
+.product-body__subject, 
 .questions__title, 
 .product-cards__title, 
 .title-medium, 
@@ -924,6 +926,7 @@ video {
   padding-left: 30px;
 }
 
+.product-body__description, 
 .product-cards__description, 
 .desc-medium, 
 .feature__description {
@@ -2078,7 +2081,7 @@ video {
   background-color: transparent;
 }
 
-.product__body {
+.product-body {
   position: relative;
   margin-top: 5rem;
   display: flex;
@@ -2087,7 +2090,7 @@ video {
   padding-right: 5rem;
 }
 
-.product__gradient {
+.product-body__gradient {
   position: absolute;
   top: 0px;
   left: 0px;
@@ -2150,7 +2153,7 @@ video {
   padding-right: 5rem;
 }
 
-.product-cards {
+.product-body__cards {
   right: 80px;
   margin-right: 5%;
   margin-top: 50px;
@@ -2168,7 +2171,7 @@ video {
   padding-left: 5%;
 }
 
-.product-cards__image {
+.product-body__image {
   margin-bottom: 20px;
   width: 66.44px;
 }
