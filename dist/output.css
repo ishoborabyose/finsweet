@@ -551,38 +551,8 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.mb-\[100px\] {
-  margin-bottom: 100px;
-}
-
-.mb-\[20px\] {
-  margin-bottom: 20px;
-}
-
-.w-full {
-  width: 100%;
-}
-
 .grow {
   flex-grow: 1;
-}
-
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.font-roboto {
-  font-family: roboto;
-}
-
-.outline-none {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
 }
 
 @font-face {
@@ -602,7 +572,7 @@ video {
   padding-right: 5rem;
 }
 
-.header {
+.navbar__header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -610,20 +580,20 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.header__navbar {
+.navbar__navbar {
   display: flex;
   gap: 2.5rem;
   font-family: roboto;
 }
 
-.header__item {
+.navbar__item {
   font-family: roboto;
   font-size: 16px;
   --tw-text-opacity: 1;
   color: rgb(29 33 48 / var(--tw-text-opacity));
 }
 
-.header__gradient {
+.navbar__gradient {
   z-index: -20;
   position: absolute;
   width: 524px;
@@ -644,10 +614,76 @@ video {
   filter: blur(200px);
 }
 
-.btn {
+.navbar__btn {
   display: flex;
   height: 56px;
   width: 144px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  font-family: roboto-bold;
+  font-size: 16px;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navbar__btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 56 82 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.banner__switch, 
+.pricing__btn, 
+.pricing-navbar__btn, 
+.product__btnactive, 
+.btn, 
+.contact__btn, 
+.footer__btn {
+  display: flex;
+  height: 56px;
+  width: 144px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  font-family: roboto-bold;
+  font-size: 16px;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.banner__switch:hover, 
+.pricing__btn:hover, 
+.pricing-navbar__btn:hover, 
+.product__btnactive:hover, 
+.btn:hover, 
+.contact__btn:hover, 
+.footer__btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(49 56 82 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.contact__btn {
+  display: flex;
+  height: 56px;
+  width: 100%;
   cursor: pointer;
   align-items: center;
   justify-content: center;
@@ -693,6 +729,31 @@ video {
   text-align: center;
 }
 
+.analyst-subtitle, 
+.about__banner-subtitle, 
+.quality__title {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #373fff;
+  --tw-gradient-to: rgb(55 63 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #3acaf8;
+  -webkit-background-clip: text;
+          background-clip: text;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: transparent;
+}
+
+.quality__description {
+  text-align: center;
+  font-family: roboto;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.navbar--down, 
 .title--up {
   margin-bottom: 20px;
 }
@@ -709,6 +770,10 @@ video {
   text-align: center;
 }
 
+.journal__subject, 
+.analyst__title, 
+.questions__subject, 
+.service__subject, 
 .title {
   font-family: roboto;
   font-size: 56px;
@@ -716,6 +781,8 @@ video {
   line-height: 110%;
 }
 
+.questions__description, 
+.product__description, 
 .description {
   margin-left: auto;
   margin-right: auto;
@@ -728,6 +795,62 @@ video {
   opacity: 0.87;
 }
 
+.corporate__subject, 
+.about__title, 
+.contactUs__title, 
+.pricing-navbar__title, 
+.product__body-title, 
+.footer__subject, 
+.experience__title, 
+.banner__title, 
+.product__title, 
+.feature__title {
+  text-align: center;
+  font-family: roboto;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.corporate__explanation, 
+.about__description, 
+.pricing-navbar__description, 
+.footer__explanation, 
+.banner__description {
+  margin-left: auto;
+  margin-right: auto;
+  width: 768px;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  text-align: center;
+  font-family: roboto;
+  font-size: 18px;
+  line-height: 150%;
+  opacity: 0.87;
+}
+
+.journal__explanation, 
+.questions__explanation, 
+.service__description, 
+.experience__description, 
+.description-medium {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.banner__input {
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  font-family: roboto;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.journal__subtitle, 
+.service__title, 
 .title-gradient {
   background-image: linear-gradient(to right, var(--tw-gradient-stops));
   --tw-gradient-from: #373fff;
@@ -785,7 +908,10 @@ video {
   width: 66.44px;
 }
 
-.title-medium {
+.questions__title, 
+.product-cards__title, 
+.title-medium, 
+.feature__subtitle {
   margin-top: 10px;
   margin-bottom: 20px;
   font-family: roboto-bold;
@@ -798,7 +924,26 @@ video {
   padding-left: 30px;
 }
 
-.desc-medium {
+.product-cards__description, 
+.desc-medium, 
+.feature__description {
+  margin-top: 10px;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.87;
+}
+
+.quality__subject {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-family: roboto-bold;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.quality__explanation {
   margin-top: 10px;
   font-family: roboto;
   font-size: 16px;
@@ -818,6 +963,42 @@ video {
 
 .work__banner {
   margin: auto;
+}
+
+.analyst__subtitle, 
+.work__banner-title {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #373fff;
+  --tw-gradient-to: rgb(55 63 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #3acaf8;
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 24px;
+  font-weight: 700;
+  color: transparent;
+}
+
+.work__banner-subtitle {
+  font-family: roboto;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.work__banner-description {
+  margin-top: 10px;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 0.87;
+}
+
+.work__banner-subdescription {
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
 }
 
 .work__item {
@@ -851,6 +1032,22 @@ video {
   background-color: transparent;
 }
 
+.impression__title {
+  margin-bottom: 20px;
+  font-family: roboto;
+  font-size: 56px;
+  font-weight: 800;
+  line-height: 110%;
+}
+
+.impression__description {
+  margin-bottom: 20px;
+  font-family: roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+}
+
 .experience__name {
   font-family: roboto;
   font-size: 1.5rem;
@@ -872,6 +1069,26 @@ video {
   z-index: -10;
   height: 100%;
   width: 100%;
+}
+
+.impression__btn {
+  display: flex;
+  height: 56px;
+  width: 144px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  font-family: roboto-bold;
+  font-size: 16px;
+  font-weight: 800;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+  transition-property: all;
+  transition-duration: 500ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .impression__image {
@@ -977,6 +1194,7 @@ video {
   margin-bottom: 100px;
 }
 
+.pricing-navbar__btns, 
 .btn-container {
   margin: auto;
   margin-top: 20px;
@@ -1004,6 +1222,7 @@ video {
   gap: 20px;
 }
 
+.pricing-navbar__btn--active, 
 .btn--active {
   border-radius: 12px;
   --tw-bg-opacity: 1;
@@ -1138,25 +1357,26 @@ video {
   padding: 2.5rem;
 }
 
-.question__card > :not([hidden]) ~ :not([hidden]) {
+.questions__card > :not([hidden]) ~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
 }
 
-.question__card {
+.questions__card {
   border-radius: 24px;
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 2.5rem;
 }
 
-.question__input {
+.questions__input {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
+.questions__explanation--light, 
 .description-medium--light {
   opacity: 0.87;
 }
@@ -1359,6 +1579,8 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.blog__date, 
+.journal__date, 
 .date {
   font-family: roboto;
   font-size: 16px;
@@ -1777,6 +1999,13 @@ video {
   opacity: 0.5;
 }
 
+.footer__button:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .footer__leftBtn {
   border-radius: 12px;
   --tw-bg-opacity: 1;
@@ -1787,6 +2016,13 @@ video {
   font-weight: 600;
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.footer__leftBtn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .footer__gradient {
@@ -1889,6 +2125,8 @@ video {
 }
 
 .product__btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 33 48 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1958,13 +2196,6 @@ video {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-}
-
-.description-medium {
-  font-family: roboto;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
 }
 
 .service__gradient {

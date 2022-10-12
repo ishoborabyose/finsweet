@@ -8,31 +8,33 @@
     <title>Blog</title>
   </head>
   <body>
-    <section class="blogger">
-      <header class="header header--padding">
-        <img class="header__image" src="/assets/images/Vector-logo.png" />
+    <section class="navbar">
+      <header class="navbar__header">
+        <img class="navbar__image" src="/assets/images/Vector-logo.png" />
 
-        <ul class="header__navbar">
-          <li class="header__item"><a href="/index.html">Home</a></li>
-          <li class="header__item">
+        <ul class="navbar__navbar">
+          <li class="navbar__item"><a href="/index.html">Home</a></li>
+          <li class="navbar__item">
             <a href="./product.html">Product</a>
           </li>
-          <li class="header__item">
+          <li class="navbar__item">
             <a href="./pricing.html">Pricing</a>
           </li>
-          <li class="header__item">
+          <li class="navbar__item">
             <a href="./aboutUs.html">About Us</a>
           </li>
-          <li class="header__item">
+          <li class="navbar__item">
             <a href="./blog.html">Blog</a>
           </li>
-          <li class="header__item">
+          <li class="navbar__item">
             <a href="./contactUs.html">Contact</a>
           </li>
-          <li class="btn">Free trial</li>
+          <li class="navbar__btn">Free trial</li>
         </ul>
       </header>
+    </section>
 
+    <section class="blog">
       <img
         src="/assets/vectors/Gradient-about.svg"
         class="blog__gradient"
@@ -54,17 +56,17 @@
               class="journal__gradient"
             />
             <div class="journal__book">
-              <h3 class="title-gradient">Marketing insights</h3>
+              <h3 class="journal__subtitle">Marketing insights</h3>
 
-              <p class="title">Data-driven client feedback</p>
-              <p class="description">
+              <p class="journal__subject">Data-driven client feedback</p>
+              <p class="journal__explanation">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
                 diam nonumy eirmod tempor invidunt ut labore et dolore magna
                 aliquyam erat, sed diam voluptua. At vero eos et accusam et
                 justo duo dolores et ea rebum. Stet clita kasd gubergren..
               </p>
 
-              <p class="date">Luke Matthews l November 8, 2021</p>
+              <p class="journal__date">Luke Matthews l November 8, 2021</p>
             </div>
           </div>
           <img
@@ -97,7 +99,7 @@
               sed do eiusmod tempor incididunt.
             </p>
 
-            <p class="date">Luke Matthews l November 8, 2021</p>
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
           </div>
         </div>
         <div class="blog__book">
@@ -118,29 +120,7 @@
               sed do eiusmod tempor incididunt.
             </p>
 
-            <p class="date">Luke Matthews l November 8, 2021</p>
-          </div>
-        </div>
-
-        <div class="blog__book">
-          <img
-            src="/assets/images/photo-of-boy-using-vr-headset.png"
-            class="blog__image"
-            alt=""
-          />
-          <div class="blog__article">
-            <p class="blog__new">
-              <a href="./blogPost.html">
-                7 Automation use cases that foster <br />
-                excellent CX
-              </a>
-            </p>
-            <p class="blog__feed">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
-              sed do eiusmod tempor incididunt.
-            </p>
-
-            <p class="date">Luke Matthews l November 8, 2021</p>
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
           </div>
         </div>
 
@@ -162,7 +142,7 @@
               sed do eiusmod tempor incididunt.
             </p>
 
-            <p class="date">Luke Matthews l November 8, 2021</p>
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
           </div>
         </div>
 
@@ -184,7 +164,7 @@
               sed do eiusmod tempor incididunt.
             </p>
 
-            <p class="date">Luke Matthews l November 8, 2021</p>
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
           </div>
         </div>
 
@@ -206,7 +186,7 @@
               sed do eiusmod tempor incididunt.
             </p>
 
-            <p class="date">Luke Matthews l November 8, 2021</p>
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
           </div>
         </div>
 
@@ -228,7 +208,7 @@
               sed do eiusmod tempor incididunt.
             </p>
 
-            <p class="date">Luke Matthews l November 8, 2021</p>
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
           </div>
         </div>
 
@@ -250,7 +230,7 @@
               sed do eiusmod tempor incididunt.
             </p>
 
-            <p class="date">Luke Matthews l November 8, 2021</p>
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
           </div>
         </div>
 
@@ -272,25 +252,45 @@
               sed do eiusmod tempor incididunt.
             </p>
 
-            <p class="date">Luke Matthews l November 8, 2021</p>
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
+          </div>
+        </div>
+
+        <div class="blog__book">
+          <img
+            src="/assets/images/photo-of-boy-using-vr-headset.png"
+            class="blog__image"
+            alt=""
+          />
+          <div class="blog__article">
+            <p class="blog__new">
+              <a href="./blogPost.html">
+                7 Automation use cases that foster <br />
+                excellent CX
+              </a>
+            </p>
+            <p class="blog__feed">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />
+              sed do eiusmod tempor incididunt.
+            </p>
+
+            <p class="blog__date">Luke Matthews l November 8, 2021</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Footer -->
-
     <section class="footer">
       <div class="footer__head">
-        <p class="title title--center">
+        <p class="footer__subject">
           Are you ready to grow your <br />
           business with us?
         </p>
-        <p class="description description-center">
+        <p class="footer__explanation">
           Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
           nonumy.
         </p>
-        <button class="btn">Free trial</button>
+        <button class="footer__btn">Free trial</button>
 
         <img
           src="/assets/images/footer-gradient.png"
