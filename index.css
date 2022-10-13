@@ -672,14 +672,14 @@
 }
 
 .banner__background {
-  position: absolute;
-  width: 524px;
-  height: 496px;
-  right: 566px;
-  top: 314px;
-  left: 100px;
-  transform: rotate(200deg);
-  border-radius: 100%;
+  @apply absolute
+  w-[524px]
+  h-[496px]
+  right-[566px]
+  top-[314px]
+  left-[100px]
+  rotate-180
+  blur-[200px];
   background: radial-gradient(
     483.9% 2719.65% at -49.5% -250%,
     #d798e1 17.55%,
@@ -688,7 +688,6 @@
     #c9d4ef 56.53%,
     #cacffa 65.69%
   );
-  filter: blur(200px);
 }
 
 .gradient__title {
@@ -699,15 +698,14 @@
 }
 
 .b-gradient {
-  position: absolute;
-  width: 524px;
-  height: 496px;
-  right: 566px;
-  top: 314px;
-  left: 100px;
-  transform: rotate(200deg);
-  border-radius: 100%;
-
+  @apply absolute
+  w-[524px]
+  h-[496px]
+  right-[566px]
+  top-[314px]
+  left-[100px]
+  rotate-180
+  blur-[200px];
   background: radial-gradient(
     483.9% 2719.65% at -49.5% -250%,
     #d798e1 17.55%,
@@ -716,7 +714,6 @@
     #c9d4ef 56.53%,
     #cacffa 65.69%
   );
-  filter: blur(200px);
 }
 
 @tailwind components;
