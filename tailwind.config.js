@@ -17,6 +17,10 @@ module.exports = {
         "light-btn": "#E0E4FC",
         "light-pink": "#F9F0FB",
       },
+      backgroundImage: {
+        "label-gradient":
+          "radial-gradient(483.9% 2719.65% at -49.5% -250%,#d798e1 17.55%,#9bffa5 27.56%,#aed3ff 49.89%,#c9d4ef 56.53%,#cacffa 65.69%)",
+      },
     },
   },
   plugins: [],

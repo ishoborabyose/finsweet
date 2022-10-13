@@ -679,22 +679,12 @@
   top-[314px]
   left-[100px]
   rotate-180
+  bg-label-gradient
   blur-[200px];
-  background: radial-gradient(
-    483.9% 2719.65% at -49.5% -250%,
-    #d798e1 17.55%,
-    #9bffa5 27.56%,
-    #aed3ff 49.89%,
-    #c9d4ef 56.53%,
-    #cacffa 65.69%
-  );
 }
 
 .gradient__title {
-  background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  @apply font-bold text-[24px] text-transparent bg-clip-text bg-gradient-to-r from-[#373fff] to-[#3acaf8];
 }
 
 .b-gradient {
@@ -705,15 +695,8 @@
   top-[314px]
   left-[100px]
   rotate-180
-  blur-[200px];
-  background: radial-gradient(
-    483.9% 2719.65% at -49.5% -250%,
-    #d798e1 17.55%,
-    #9bffa5 27.56%,
-    #aed3ff 49.89%,
-    #c9d4ef 56.53%,
-    #cacffa 65.69%
-  );
+  blur-[200px]
+  bg-label-gradient;
 }
 
 @tailwind components;

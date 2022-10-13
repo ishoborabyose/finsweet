@@ -603,16 +603,9 @@ video {
   width: 524px;
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-image: radial-gradient(483.9% 2719.65% at -49.5% -250%,#d798e1 17.55%,#9bffa5 27.56%,#aed3ff 49.89%,#c9d4ef 56.53%,#cacffa 65.69%);
   --tw-blur: blur(200px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  background: radial-gradient(
-    483.9% 2719.65% at -49.5% -250%,
-    #d798e1 17.55%,
-    #9bffa5 27.56%,
-    #aed3ff 49.89%,
-    #c9d4ef 56.53%,
-    #cacffa 65.69%
-  );
 }
 
 .navbar__btn {
@@ -2257,23 +2250,22 @@ video {
   width: 524px;
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-image: radial-gradient(483.9% 2719.65% at -49.5% -250%,#d798e1 17.55%,#9bffa5 27.56%,#aed3ff 49.89%,#c9d4ef 56.53%,#cacffa 65.69%);
   --tw-blur: blur(200px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  background: radial-gradient(
-    483.9% 2719.65% at -49.5% -250%,
-    #d798e1 17.55%,
-    #9bffa5 27.56%,
-    #aed3ff 49.89%,
-    #c9d4ef 56.53%,
-    #cacffa 65.69%
-  );
 }
 
 .gradient__title {
-  background: linear-gradient(53.94deg, #373fff 15.02%, #3acaf8 82.83%);
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #373fff;
+  --tw-gradient-to: rgb(55 63 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #3acaf8;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+          background-clip: text;
+  font-size: 24px;
+  font-weight: 700;
+  color: transparent;
 }
 
 .b-gradient {
@@ -2285,14 +2277,7 @@ video {
   width: 524px;
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  background-image: radial-gradient(483.9% 2719.65% at -49.5% -250%,#d798e1 17.55%,#9bffa5 27.56%,#aed3ff 49.89%,#c9d4ef 56.53%,#cacffa 65.69%);
   --tw-blur: blur(200px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-  background: radial-gradient(
-    483.9% 2719.65% at -49.5% -250%,
-    #d798e1 17.55%,
-    #9bffa5 27.56%,
-    #aed3ff 49.89%,
-    #c9d4ef 56.53%,
-    #cacffa 65.69%
-  );
 }
